@@ -16,4 +16,10 @@ public class MyController {
     model.addAttribute("brand", "Fiat");
     model.addAttribute("model", "Punto");
     return "car"; }
+    @GetMapping("/me")
+    public String me(Model model){
+        model.addAttribute("name", "Marek");
+        model.addAttribute("surname", "P.");
+        return "me";
+    }
 }
